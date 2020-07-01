@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVASCRIPT</title>
+<body>
+<h1>linking</h1>
+<a href="javascript.txt">prathyusha</a><br>
+<h1>printing on console</h1>
+<script>
+	var w=10;
+	var v=20;
+	console.log(w);
+	console.log(v);
+</script>
+<h1>array number to string</h1>
+<script>
+var arr = [];
+arr[0] = 1.2;
+arr[1] = 2.2;
+arr[2] = 4.3;
+arr[3] = 4.4;
+arr[4] = 5.5;
+arr.splice(2, 0, 6);
+
+var c=String(arr[3])
+document.write(c);
+document.write("<br />");
+</script>
+<h1>table creation,sum,avg calculation</h1>
+<table id="table" border="1">
+            <tr>
+    <th> subjects</th>
+    <th>marks</th>
+  </tr>
+  <tr>
+    <td>Operating system</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>computer networks</td>
+    <td>79</td>
+  </tr>
+  <tr>
+    <td>object oriented analysis and design</td>
+    <td>76</td>
+  </tr>
+  <tr>
+    <td>software testing</td>
+    <td>74</td>
+  </tr>
+  <tr>
+    <td>principles of programming languages</td>
+    <td>74</td>
+  </tr>
+  <tr>
+    <td>R programming</td>
+    <td>83</td>
+  </tr>
+</table>
+<h1>calling function</h1>
+        <span id="val"></span>
+        
+        <script>
+            
+            var table = document.getElementById("table"), avgVal, sumVal = 0, 
+                        rowCount = table.rows.length - 1;// minus the header
+            
+            for(var i = 1; i < table.rows.length; i++)
+            {
+                sumVal = sumVal + parseInt(table.rows[i].cells[1].innerHTML);
+            }
+            
+            
+function myFunction() {
+  var table = document.getElementById("table");
+  var row = table.insertRow(table.rows.length);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = "avg"
+  cell2.innerHTML = parseInt(sumVal / rowCount);
+  var row = table.insertRow(table.rows.length-1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = "sum"
+  cell2.innerHTML = sumVal;
+}
+
+myFunction();
+
+</script>
+<script>
+var x=16.1;
+var y=2;
+document.write(Math.pow(x,y)); 
+document.write("<br />");
+document.write(Math.sqrt(x)); 
+document.write("<br />");
+document.write(Math.abs(x)); 
+document.write("<br />");
+document.write(Math.random()); 
+document.write("<br />");
+var l = Math.floor((Math.random() * 10) + 1);
+document.write(l);
+document.write("<br />");
+var m = Math.ceil((Math.random() * 10) + 1);
+document.write(m);
+document.write("<br />");
+var n = Math.round((Math.random() * 10) + 1);
+document.write(n);
+document.write("<br />");
+document.write(Math.tanh(1));
+document.write("<br />");
+
+</script>    
+<h1>form creation and validation</h1>
+<form id="myForm" method="get">
+    <input type="text" name="Name" onkeypress="return (event.charCode > 64 && 
+	event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required="required"
+	placeholder="Name"><br><br>
+
+	 <input class="form-control  input-md text-box single-line" id="ContactNumber" max="9999999999" min="1000000000" name="ContactNumber" required="required" type="number" placeholder="Number">
+   
+ 
+  <p>subject interests:</p>
+  <div class="check" required="required">
+  <input type="checkbox" >
+  <label for="course">healthcare administration</label><br>
+  <input type="checkbox" >
+  <label for="course"> mathematics</label><br>
+  <input type="checkbox" >
+  <label for="course">computer science</label><br>
+  <input type="checkbox" >
+  <label for="course">marketing</label><br>
+  <input type="checkbox" >
+  <label for="course"> petroleum engineering</label><br>
+  <input type="checkbox" >
+  <label for="course">polotical science</label><br>
+  <input type="submit" > 
+</div>
+</form>
+<script>
+function validate(){
+	
+	if(document.myForm.Name.value=="")
+	{
+		alert("Please fill out this field");
+		document.myForm.Name.Focus();
+		return false;
+	}
+	if(document.myForm.Number.value=="")
+	{
+		alert("Please fill out this field");
+		document.myForm.Number.Focus();
+		return false;
+	}
+}
+validate();
+</script>
+         
+    </body>
+</html>
+
+                 
