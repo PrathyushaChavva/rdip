@@ -1,0 +1,40 @@
+*{
+	text-align: center;
+	margin: 0px;
+}
+h1{
+	font-family: italic;
+	font-size: 45px;
+	background-color: blue;
+	padding: 10px;
+}
+h2{
+	font-family: italic;
+}
+#amount{
+	margin-top: 35px;
+	font-size: 35px;
+	font-family: italic;
+	width: 650px;
+}
+#fromcurrency{
+	font-size: 35px;
+	font-family: italic;
+	width: 650px;
+}
+#tocurrency{
+	font-size: 35px;
+	font-family: italic;
+	width: 650px;
+}
+#currencybtn{
+	font-size: 28px;
+	padding: 12px 23px;
+	border: none;
+	color: black;
+	background-color: red;
+}
+#currencybtn:active{
+	background-color: green;
+
+} 
